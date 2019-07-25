@@ -1,0 +1,14 @@
+
+<div *ngIf="banderaMensajes">
+    <label appPenPen>{{author}}</label> <br>
+    <label appPenPen>{{quote}}</label> <br>
+</div>
+<button *ngIf="banderaBoton" (click)="getQuotes()">Obtener Mensaje</button>
+<button (click)="ocultarMensaje()">Ocultar/Mostrar Mensajes</button>
+<button (click) ="ocultarBoton()">Ocultar/Mostrar Boton</button><br>
+<button (click)="mostrarImagen()">"Debes subir al x-wing Shinji (imagen)"</button>
+<div *ngIf="banderaImagen">
+    <img width="600" src="/assets/images/image.jpg">
+    <p>O Rei tendra que hacerlo de nuevo =P</p>
+</div>
+
