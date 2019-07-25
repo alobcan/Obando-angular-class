@@ -12,9 +12,11 @@ export class MisatoComponent implements OnInit {
   private banderaMensajes: boolean;
   private banderaBoton: boolean;
   private banderaImagen: boolean;
+  private banderaMaster: boolean;
 
 
   constructor(private mensajesService: KatsuragiService) {
+    this.banderaMaster=true;
     this.banderaMensajes=true;
     this.banderaBoton=true;
     this.banderaImagen=false;
@@ -39,5 +41,8 @@ export class MisatoComponent implements OnInit {
   }
   mostrarImagen(){
     this.banderaImagen = !this.banderaImagen;
+  }
+  ocultarImplementacion(){
+    this.banderaMaster=!this.banderaMaster;
   }
 }

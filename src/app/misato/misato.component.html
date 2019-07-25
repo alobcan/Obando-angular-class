@@ -1,4 +1,4 @@
-
+<div *ngIf="banderaMaster">
 <div *ngIf="banderaMensajes">
     <label appPenPen>{{author}}</label> <br>
     <label appPenPen>{{quote}}</label> <br>
@@ -11,4 +11,7 @@
     <img width="600" src="/assets/images/image.jpg">
     <p>O Rei tendra que hacerlo de nuevo =P</p>
 </div>
+
+</div>
+<br><button (click)="ocultarImplementacion()">Ocultar/Mostrar Implementacion</button>
 
